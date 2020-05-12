@@ -6,7 +6,6 @@ class ShoppingCart:
             if self.cart_items.keys().__contains__(product.get_name()):  # existing item
                 # add stock value
                 self.update_stock(product.stock())
-
             else:  # new item
                 self.cart_items[product.name()] = product
         else:  # empty list
